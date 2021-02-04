@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="adminDash" prefHeight="524.0" prefWidth="756.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminPage">
+   <children>
+      <Label layoutX="14.0" layoutY="29.0" text="Nom" />
+      <TextField fx:id="nomUser" layoutX="14.0" layoutY="55.0" />
+      <Label layoutX="191.0" layoutY="30.0" text="email" />
+      <TextField fx:id="emailUser" layoutX="191.0" layoutY="56.0" />
+      <Label layoutX="378.0" layoutY="33.0" text="Pass" />
+      <TextField fx:id="passUser" layoutX="378.0" layoutY="59.0" />
+      <Label layoutX="565.0" layoutY="32.0" text="TypeUser" />
+      <Button layoutX="15.0" layoutY="99.0" mnemonicParsing="false" onAction="#InsertAction" prefHeight="25.0" prefWidth="149.0" text="Insert" />
+      <TableView fx:id="table" layoutX="14.0" layoutY="176.0" prefHeight="334.0" prefWidth="735.0">
+        <columns>
+          <TableColumn fx:id="idcol" minWidth="0.0" prefWidth="31.0" text="ID" />
+          <TableColumn fx:id="namecol" prefWidth="87.0" text="Nom" />
+            <TableColumn fx:id="emailcol" prefWidth="147.0" text="Email" />
+            <TableColumn fx:id="stafftypecol" prefWidth="126.0" text="Staff Role" />
+            <TableColumn fx:id="passwordcol" minWidth="0.0" prefWidth="133.0" text="Password" />
+            <TableColumn fx:id="promocol" minWidth="0.0" prefWidth="133.0" text="Promo" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="bx_typeUser" layoutX="565.0" layoutY="59.0" onAction="#ActivatedPromotion" prefWidth="150.0" />
+      <Label fx:id="status" layoutX="565.0" layoutY="103.0" text="Promotion" />
+      <ComboBox fx:id="bx_promo" layoutX="565.0" layoutY="124.0" prefWidth="150.0" />
+      <Button fx:id="btnlogout" layoutX="704.0" layoutY="-2.0" mnemonicParsing="false" onAction="#ActionDestroy" text="Logout" />
+      <Button layoutX="15.0" layoutY="137.0" mnemonicParsing="false" onAction="#AddPromo" prefHeight="25.0" prefWidth="149.0" text="AddPromo" />
+   </children>
+</AnchorPane>

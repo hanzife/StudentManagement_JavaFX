@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="203.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PromoController">
+   <children>
+      <ComboBox fx:id="Bx_TeachID" layoutX="85.0" layoutY="25.0" prefWidth="150.0" />
+      <Button layoutX="508.0" layoutY="145.0" mnemonicParsing="false" onAction="#AddPromotion" text="Button" />
+      <TextField fx:id="txt_nompromo" layoutX="86.0" layoutY="70.0" promptText="Nom Promo" />
+      <Label layoutX="30.0" layoutY="29.0" text="Label" />
+      <Label layoutX="30.0" layoutY="74.0" text="Label" />
+      <Label layoutX="287.0" layoutY="74.0" text="Label" />
+      <DatePicker fx:id="dateDub" layoutX="360.0" layoutY="25.0" />
+      <DatePicker fx:id="DateFin" layoutX="360.0" layoutY="70.0" />
+   </children>
+</AnchorPane>
